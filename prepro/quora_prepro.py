@@ -68,11 +68,11 @@ def main():
 					
 					outval.append(jimg)
 	#write the json files for train test and val
-	print len(out)
+	print(len(out))
 	json.dump(out, open('../data/quora_raw_train.json', 'w'))
-	print len(outtest)
+	print(len(outtest))
 	json.dump(outtest, open('../data/quora_raw_test.json', 'w'))
-	print len(outval)
+	print(len(outval))
 	json.dump(outval, open('../data/quora_raw_val.json', 'w'))
 
 
